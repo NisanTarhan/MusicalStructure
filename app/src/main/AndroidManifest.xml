@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.nisan.musicalstructure">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AllSongsActivity"
+            android:label="@string/allSongs"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".AlbumsActivity"
+            android:label="@string/albums"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ArtistsActivity"
+            android:label="@string/artists"
+            android:parentActivityName=".MainActivity" />
+
+        <activity
+            android:name=".NowPlayingScreen"
+            android:label="NowPlaying"
+            android:parentActivityName=".AllSongsActivity" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+    </application>
+
+</manifest>

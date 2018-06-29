@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Black"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/menuArt"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:background="@color/Black"
+        android:contentDescription="@string/wallpaper"
+        android:scaleType="fitCenter"
+        android:src="@drawable/music" />
+
+    <TextView
+        android:id="@+id/allSongs"
+        style="@style/CategoryStyle"
+        android:background="@color/White"
+        android:text="@string/txtName1"
+        app:fontFamily="@font/audiowide" />
+
+    <TextView
+        android:id="@+id/albums"
+        style="@style/CategoryStyle"
+        android:text="@string/txtName2"
+        app:fontFamily="@font/audiowide" />
+
+    <TextView
+        android:id="@+id/artists"
+        style="@style/CategoryStyle"
+        android:text="@string/txtName3"
+        app:fontFamily="@font/audiowide" />
+
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="album_arts">
+        <item>@drawable/music</item>
+    </array>
+</resources>
