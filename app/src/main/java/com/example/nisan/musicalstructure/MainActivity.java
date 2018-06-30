@@ -18,14 +18,9 @@ public class MainActivity extends AppCompatActivity {
             // The code in this method will be executed when the numbers category is clicked on.
             @Override
             public void onClick(View view) {
-                // Create a new intent to open the {@link NumbersActivity}
-                Intent allSongsIntent = new Intent(MainActivity.this, AllSongsActivity.class);
-
-                // Start the new activity
-                startActivity(allSongsIntent);
+                startActivity(new Intent(MainActivity.this, AllSongsActivity.class));
             }
         });
-
 
         TextView albums = (TextView) findViewById(R.id.albums);
 
@@ -33,14 +28,9 @@ public class MainActivity extends AppCompatActivity {
             // The code in this method will be executed when the numbers category is clicked on.
             @Override
             public void onClick(View view) {
-                // Create a new intent to open the {@link NumbersActivity}
-                Intent albumsIntent = new Intent(MainActivity.this, AlbumsActivity.class);
-
-                // Start the new activity
-                startActivity(albumsIntent);
+                startActivity(new Intent(MainActivity.this, AlbumsActivity.class));
             }
         });
-
 
         TextView artists = (TextView) findViewById(R.id.artists);
 
@@ -48,14 +38,8 @@ public class MainActivity extends AppCompatActivity {
             // The code in this method will be executed when the numbers category is clicked on.
             @Override
             public void onClick(View view) {
-                // Create a new intent to open the {@link NumbersActivity}
-                Intent artistsIntent = new Intent(MainActivity.this, ArtistsActivity.class);
-
-                // Start the new activity
-                startActivity(artistsIntent);
+                startActivity(new Intent(MainActivity.this, ArtistsActivity.class));
             }
         });
-
-
     }
 }

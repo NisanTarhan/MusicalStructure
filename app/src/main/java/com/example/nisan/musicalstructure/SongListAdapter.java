@@ -12,10 +12,10 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-public class SongAdapter extends ArrayAdapter<Song> {
+public class SongListAdapter extends ArrayAdapter<Song> {
 
     @SuppressWarnings("unchecked")
-    SongAdapter(Context context, ArrayList pSongs) {
+    SongListAdapter(Context context, ArrayList pSongs) {
         super(context, 0, pSongs);
     }
 

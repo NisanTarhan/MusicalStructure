@@ -31,7 +31,7 @@ public class ArtistsActivity extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapter, View view, int position, long arg) {
-                Intent item = new Intent(ArtistsActivity.this, NowPlayingScreen.class);
+                Intent item = new Intent(ArtistsActivity.this, NowPlayingActivity.class);
                 Song itemValue = (Song) adapter.getItemAtPosition(position);
                 String itemName = itemValue.getSongName();
                 item.putExtra("song_name", itemName);

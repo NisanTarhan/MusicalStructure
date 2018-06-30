@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
-
 import java.util.ArrayList;
 
 public class AlbumsActivity extends AppCompatActivity {
@@ -31,7 +30,7 @@ public class AlbumsActivity extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapter, View view, int position, long arg) {
-                Intent item = new Intent(AlbumsActivity.this, NowPlayingScreen.class);
+                Intent item = new Intent(AlbumsActivity.this, NowPlayingActivity.class);
                 Song itemValue = (Song) adapter.getItemAtPosition(position);
                 Song songId_item = (Song) adapter.getItemAtPosition(position);
                 int songId = songId_item.getSongId();

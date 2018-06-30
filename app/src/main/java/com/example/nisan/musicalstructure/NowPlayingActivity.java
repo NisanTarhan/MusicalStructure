@@ -10,7 +10,7 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-public class NowPlayingScreen extends AppCompatActivity implements Runnable {
+public class NowPlayingActivity extends AppCompatActivity implements Runnable {
 
     final int[] songArray = {R.raw.sofi_tukker_batshit, R.raw.imagine_dragons_thunder, R.raw.camila_cabello_havana};
     private MediaPlayer mediaPlayer;
@@ -102,7 +102,6 @@ public class NowPlayingScreen extends AppCompatActivity implements Runnable {
             }
         });
     }
-
 
     @Override
     public void run() {

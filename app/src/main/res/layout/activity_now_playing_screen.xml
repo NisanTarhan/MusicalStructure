@@ -40,15 +40,14 @@
             android:id="@+id/timeStart"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:text="0:00" />
+            android:layout_marginLeft="@dimen/padding" />
 
         <TextView
             android:id="@+id/timeStop"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="295dp"
-            android:text="3:30" />
+            android:layout_marginLeft="280dp" />
+
     </LinearLayout>
 
     <LinearLayout

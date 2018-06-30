@@ -4,39 +4,38 @@ import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 
 public class Song {
-    private String songName;
-    private String artistName;
-    private String albumName;
-    private int songId;
-    private int imageResourceId;
+    private String mSongName;
+    private String mArtistName;
+    private String mAlbumName;
+    private int mSongId;
+    private int mImageResourceId;
 
     public Song(@NonNull int songId, @Nullable String songName, @Nullable String artistName, @Nullable String albumName, @Nullable int imageResourceId) {
-        this.songId = songId;
-        this.songName = songName;
-        this.artistName = artistName;
-        this.albumName = albumName;
-        this.imageResourceId = imageResourceId;
+        this.mSongId = songId;
+        this.mSongName = songName;
+        this.mArtistName = artistName;
+        this.mAlbumName = albumName;
+        this.mImageResourceId = imageResourceId;
     }
 
     public String getSongName() {
-        return songName;
+        return mSongName;
     }
 
     public String getArtistName() {
-        return artistName;
+        return mArtistName;
     }
 
     public String getAlbumName() {
-        return albumName;
+        return mAlbumName;
     }
 
     public int getImageResourceId() {
-        return imageResourceId;
+        return mImageResourceId;
     }
 
     public int getSongId() {
-        return songId;
+        return mSongId;
     }
-
 
 }

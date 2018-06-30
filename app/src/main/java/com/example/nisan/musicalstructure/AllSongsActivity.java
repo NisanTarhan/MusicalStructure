@@ -2,7 +2,6 @@ package com.example.nisan.musicalstructure;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
-import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -23,7 +22,7 @@ public class AllSongsActivity extends AppCompatActivity {
         songs.add(new Song(1, "Thunder", "Imagine Dragons", null, R.drawable.play_button));
         songs.add(new Song(2, "Havana", "Camila Cabello", null, R.drawable.play_button));
 
-        SongAdapter adapter = new SongAdapter(this, songs);
+        SongListAdapter adapter = new SongListAdapter(this, songs);
 
         ListView listView = findViewById(R.id.list);
 
@@ -32,7 +31,7 @@ public class AllSongsActivity extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapter, View view, int position, long arg) {
-                Intent item = new Intent(AllSongsActivity.this, NowPlayingScreen.class);
+                Intent item = new Intent(AllSongsActivity.this, NowPlayingActivity.class);
                 Song itemValue = (Song) adapter.getItemAtPosition(position);
                 Song songId_item = (Song) adapter.getItemAtPosition(position);
                 int songId = songId_item.getSongId();
